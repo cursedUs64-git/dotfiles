@@ -41,7 +41,6 @@ static const Rule rules[] = {
      */
     /* class      instance    title       tags mask     isfloating   monitor */
     { "Gimp",     NULL,       NULL,       0,            1,           -1 },
-    { "mercury-default",  "Navigator",       NULL,       1 << 8,       0,           -1 },
     { "Alacritty",  "Alacritty", NULL, 0, 1, 0 }
 };
 
@@ -89,8 +88,6 @@ static const Key keys[] = {
     {0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol}},
     {0,                       XF86XK_AudioMute, spawn, {.v = mutecmd }},
     {0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol}},
-    {0,				XF86XK_Calculator,		spawn,	{.v = light_up}},
-    {0,				XF86XK_Mail,	spawn,	{.v = light_down}},
 
     // screenshot fullscreen and cropped
     {MODKEY|ControlMask,                XK_u,       spawn,
